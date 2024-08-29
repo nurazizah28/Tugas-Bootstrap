@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Latihan bootstrap</title>
+    <title>Latihan Bootstrap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
@@ -24,53 +24,78 @@
             <button class="btn btn-primary" id="cart"><i class="fas fa-shopping-cart"></i><span
                     id="cartItemCount">(0)</span></button>
         </nav>
-        <div class="row">
-            <div class="row col-md-12 mt-2" id="listBarang">
-                    <!-- Kerjakan dibawah ini! -->
-                      <div class="card" style="width: 18rem;">
-                          <img src="logitek.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Keyboard Logitek</h5>
-                            <p class="card-text">Keyboard yang mantap untuk kantoran.</p>
-                            <a href="#" class="btn btn-primary">Add to card</a>
-                        </div>
-                        </div>
-
-                        <div class="row col4 -md -12 mt-2" id="listBarang">
-                            <div class="card" style="width: 18rem;">
-                              <img src="msi.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Keyboard MSI</h5>
-                                <p class="card-text">Keyboard gaming MSI mekanik.</p>
-                                <a href="#" class="btn btn-primary">Add to card</a>
-                            </div>
-                            </div>
-
-                            <div class="row col4 -md -12 mt-2" id="listBarang">
-                                <div class="card" style="width: 18rem;">
-                                  <img src="genius.jpeg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Mouse Genius</h5>
-                                    <p class="card-text">Mouse Genius biar lebih pinter.</p>
-                                    <a href="#" class="btn btn-primary">Add to card</a>
-                                </div>
-                                </div>
-
-                            <div class="row col4 -md -12 mt-2" id="listBarang">
-                                <div class="card" style="width: 18rem;">
-                                  <img src="jerry.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Mouse Jerry</h5>
-                                    <p class="card-text">Mouse yang disukai kucing.</p>
-                                    <a href="#" class="btn btn-primary">Add to card</a>
-                                </div>
-                                </div>
+        <div class="row mt-2" id="listBarang">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img src="logitek.jpg" class="card-img-top" alt="Keyboard Logitek" style="height: 200px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboard Logitek</h5>
+                        <p class="card-text">Keyboard yang mantap untuk kantoran.</p>
+                        <p class="card-text"><strong>Rp 600.000,00</strong></p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img src="msi.jpg" class="card-img-top" alt="Keyboard MSI" style="height: 200px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboard MSI</h5>
+                        <p class="card-text">Keyboard gaming MSI mekanik.</p>
+                        <p class="card-text"><strong>Rp 300.000,00</strong></p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img src="genius.jpeg" class="card-img-top" alt="Mouse Genius" style="height: 200px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Genius</h5>
+                        <p class="card-text">Mouse Genius biar lebih pinter.</p>
+                        <p class="card-text"><strong>Rp 50.000,00</strong></p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img src="jerry.jpg" class="card-img-top" alt="Mouse Jerry" style="height: 200px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Jerry</h5>
+                        <p class="card-text">Mouse yang disukai kucing.</p>
+                        <p class="card-text"><strong>Rp 50.000,00</strong></p>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfR24DQhwF0A6Q+0nE2K"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("formItem").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var keyword = document.getElementById("keyword").value.toLowerCase();
+            var items = document.getElementById("listBarang").getElementsByClassName("col-md-3");
+
+            for (var i = 0; i < items.length; i++) {
+                var title = items[i].getElementsByClassName("card-title")[0].textContent.toLowerCase();
+                if (title.includes(keyword)) {
+                    items[i].style.display = "block";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
